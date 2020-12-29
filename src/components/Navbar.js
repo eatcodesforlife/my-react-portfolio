@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { FaBars } from 'react-icons/fa'
 import { navlinks, social } from '../utils/links'
-import logo from '../logosm.svg'
+import logo from '../mylogo.svg'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
 
@@ -36,7 +37,7 @@ const Navbar = () => {
                     {
                         navlinks.map(({id, url, text}) => (
                             <li key={id}>
-                                <a href={url} className='links-url'>{text}</a>
+                                <Link to={url} className='links-url'>{text}</Link>
                             </li>
                         ))
                     }

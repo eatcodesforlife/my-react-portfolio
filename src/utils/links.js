@@ -39,5 +39,10 @@ export const navlinks = [
         id: 4,
         url: '/contact',
         text: 'contact'
-    }   
+    },
+    {
+        id: 5,
+        url: '/error',
+        text: ''
+    }
 ]
