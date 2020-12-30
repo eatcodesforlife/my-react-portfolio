@@ -6,36 +6,60 @@ Variables
 
 :root {
   /* dark shades of primary color*/
-  --clr-primary-1: #4c1919;
-  --clr-primary-2: #712525;
-  --clr-primary-3: #973232;
-  --clr-primary-4: #aa3838;
+  --clr-primary-1: #901919;
+  --clr-primary-2: #a81d1d;
+  --clr-primary-3: #c02222;
+  --clr-primary-4: #d82626;
   /* primary/main color */
-  --clr-primary-5: #bd3e3e;
+  --clr-primary-5: #f02a2a;
   /* lighter shades of primary color */
   --clr-primary-6: #c45151;
   --clr-primary-7: #ca6565;
   --clr-primary-8: #d78b8b;
   --clr-primary-9: #de9f9f;
   --clr-primary-10: #ebc5c5;
+  /* darker shade of secondary */
+  --crl-secondary-1: #8ddaac;
+  --crl-secondary-2: #5fcb8b;
+  --crl-secondary-3: #49c47a;
+  --crl-secondary-4: #32bc6a;
+  /* main secondary color */
+  --crl-secondary-5: #1bb559;
+  /* darker shade of secondary */
+  --crl-secondary-6: #18a350;
+  --crl-secondary-7: #169147;
+  --crl-secondary-8: #137f3e;
+  --crl-secondary-9: #106d35;
+  --crl-secondary-10: #0e5b2d;
+  /* darker shade of tertiary */
+  --crl-tertiary-1: #fcd36c;
+  --crl-tertiary-2: #fbcd57;
+  --crl-tertiary-3: #fbcd57;
+  --crl-tertiary-4: #fbc642;
+  /* main tertiary color */
+  --crl-tertiary-5: #fac02d;
+  /* darker shade of tertiary */
+  --crl-tertiary-6: #e1ad29;
+  --crl-tertiary-7: #c89a24;
+  --crl-tertiary-8: #af861f;
+  --crl-tertiary-9: #96731b;
+  --crl-tertiary-10: #7d6017;
   /* darkest grey - used for headings */
-  --clr-grey-1: hsl(209, 61%, 16%);
-  --clr-grey-2: hsl(211, 39%, 23%);
-  --clr-grey-3: hsl(209, 34%, 30%);
-  --clr-grey-4: hsl(209, 28%, 39%);
+  --clr-grey-1: #102a42;
+  --clr-grey-2: #243a52;
+  --clr-grey-3: #324d67;
+  --clr-grey-4: #48647f;
   /* grey used for paragraphs */
-  --clr-grey-5: hsl(210, 22%, 49%);
-  --clr-grey-6: hsl(209, 23%, 60%);
-  --clr-grey-7: hsl(211, 27%, 70%);
-  --clr-grey-8: hsl(210, 31%, 80%);
-  --clr-grey-9: hsl(212, 33%, 89%);
-  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-grey-5: #617d98;
+  --clr-grey-6: #829ab0;
+  --clr-grey-7: #9eb2c7;
+  --clr-grey-8: #bcccdc;
+  --clr-grey-9: #dae2ec;
+  --clr-grey-10: #f1f5f8;
+  /* defaul colors */
   --clr-white: #fff;
-  --clr-red-dark: #8f1b1b;
-  --clr-red-light: hsl(360, 71%, 66%);
-  --clr-green-dark: hsl(125, 67%, 44%);
-  --clr-green-light: hsl(125, 71%, 66%);
   --clr-black: #222;
+
   --transition: all 0.3s linear;
   --spacing: 0.1rem;
   --radius: 0.25rem;

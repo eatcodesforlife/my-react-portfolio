@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { FaBars } from 'react-icons/fa'
 import { navlinks, social } from '../utils/links'
-import logo from '../mylogo.svg'
+import logo from '../imgs/mylogo.svg'
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
