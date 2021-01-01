@@ -8,13 +8,13 @@ export const social = [
         icon: <FaTwitter />
     },
      {
-        id: 1,
-        url: 'https://twitter.com/developing_Dev',
+        id: 2,
+        url: 'https://www.linkedin.com/in/cris-acosta-114ba515b',
         icon: <FaLinkedin />
     },
      {
-        id: 1,
-        url: 'https://twitter.com/developing_Dev',
+        id: 3,
+        url: 'https://github.com/eatcodesforlife',
         icon: <FaGithub />
     }
 ]
@@ -26,23 +26,18 @@ export const navlinks = [
         text: 'home'
     },
     {
-        id: 2,
-        url: '/about',
-        text: 'about'
-    },
-    {
         id: 3,
         url: '/projects',
         text: 'projects'
     },
     {
+        id: 2,
+        url: '/about',
+        text: 'about'
+    },
+    {
         id: 4,
         url: '/contact',
         text: 'contact'
-    },
-    {
-        id: 5,
-        url: '/error',
-        text: ''
-    }
+    }    
 ]
