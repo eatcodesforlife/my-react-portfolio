@@ -26,7 +26,9 @@ const Navbar = () => {
     return (
         <nav className='nav-center'>
             <div className="nav-header">
-                <img src={logo} alt="logo" className='logo'/>
+                <Link to={navlinks[0].url}>
+                    <img src={logo} alt="logo" className='logo'/>
+                </Link>
                 <button className={`nav-toggle ${isShowMenu && "rotate"}`} onClick={() => setIsShowMenu(!isShowMenu)}>
                     <FaBars />
                 </button>

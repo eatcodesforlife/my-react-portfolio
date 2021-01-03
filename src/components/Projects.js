@@ -32,7 +32,7 @@ const Projects = () => {
                 <div className="projects-center">
                     {
                         projects.map(({ id, image, url, github, title, tags}) => {
-                            return <article key={id} className="project">
+                            return <article key={id} className="project-tile">
                                 <div className="img-container">
                                     <img src={image} alt={title}/>
                                 </div>
