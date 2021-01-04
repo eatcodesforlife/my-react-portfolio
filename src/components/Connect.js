@@ -4,6 +4,7 @@ const Connect = () => {
     return (
         <section className='section contact-me'>
             <h2>Connect with me...</h2>
+            <div className="underline"></div>
             <form name='contact' action="post">
                 <input type="hidden" name="form-name" value='contact'/>
                 <div className="form-control">
