@@ -24,25 +24,27 @@ const Projects = () => {
     }, [])
 
     return (
-        isLoading 
-        ? <Loading />
-        : (
-            <section className="section projects">
-                <h2 className="section-title">Projects</h2>
-                <div className="projects-center">
+        <section className="section projects">
+            <h2 className="section-title">Projects</h2>
+            {
+                isLoading 
+                ? <Loading />
+                : <div className="projects-center">
                     {
-                        projects.map(({ id, image, url, github, title, tags}) => {
+                        projects.map(({ id, image, url, github, title, tags, bgColor}) => {
                             return <article key={id} className="project-tile">
                                 <div className="img-container">
                                     <img src={image} alt={title}/>
                                 </div>
-                                <div className="project-footer">
+                                 <div className="project-footer" style={{backgroundColor:`${bgColor}`}}>
                                     <h4>{title}</h4>
-                                    {
-                                        tags.map( tag => ( 
-                                            <p>{tag}</p>
+                                    <ul>
+                                        {
+                                        tags.map( (tag, index) => ( 
+                                            <li key={index}>{tag}</li>
                                         ))
                                     }
+                                    </ul>
                                     <div className="project-links">
                                         <a href={url} target='_blank' rel='noreferrer'>
                                             <HiDesktopComputer />
@@ -52,12 +54,13 @@ const Projects = () => {
                                         </a>
                                     </div>
                                 </div>
+                                <div className="project-tile-overlay" style={{backgroundColor:`${bgColor}`}}></div>
                             </article>
                         })
                     }
                 </div>
-            </section>
-        )
+            }
+        </section>
     )
 }
 
