@@ -17,7 +17,7 @@ const About = () => {
                     <p>Other than coffee and tea, birthing ideas to life through code and seeing it improve lives and productivity of users is what excites me the most about being a Software Developer.</p>
                     <p>I am currently looking for my first job as a Software Developer.</p>
                     <div className="about-tools">
-                        <h3>Tools that I currently use</h3>
+                        <h3>my tools</h3>
                         <ul className='about-info-tools'>
                             <li className='tools-icon'><DiJsBadge /></li>
                             <li className='tools-icon'><DiHtml5 /></li>

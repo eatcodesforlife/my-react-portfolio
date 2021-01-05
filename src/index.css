@@ -92,6 +92,7 @@ body {
   line-height: 1.5;
   font-size: 0.875rem;
   background-color: var(--clr-grey-2);
+  text-align: center;
 }
 ul {
   list-style-type: none;
@@ -157,11 +158,14 @@ p {
 }
 
 .section {
+  width: var(--fixed-width);
+  max-width: var(--max-width);
   min-height: 100vh;
   background-color: var(--clr-grey-2);
   display: grid;
   place-items: center;
   padding-top: 72px;
+  margin: 0 auto;
 }
 
 .section h2 {
@@ -349,9 +353,6 @@ a {
 /* about */
 
 .about-center {
-  width: var(--fixed-width);
-  max-width: var(--max-width);
-  margin: 0 auto;
   display: grid;
   place-items: center;
   grid-template-columns: 1fr;
@@ -359,12 +360,12 @@ a {
   font-size: 1.2rem;
 }
 .about-center img {
-  height: 20rem;
+  height: 17rem;
 }
 
 .about-img {
   border-radius: 50%;
-  width: 350px;
+  width: 275px;
   align-items: center;
   background-color: var(--clr-grey-2);
   z-index: 1;
@@ -372,11 +373,11 @@ a {
 
 .about-info {
   padding-top: 13rem;
-  transform: translateY(-20%);
+  transform: translateY(-18%);
   border: 2px solid var(--clr-secondary-1);
   border-radius: 10rem;
-  padding-right: 2.5rem;
-  padding-left: 2.5rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
   display: grid;
   place-items: center;
 }
@@ -388,16 +389,22 @@ a {
 .about-tools {
   display: grid;
   place-items: center;
-  background-color: var(--clr-tertiary-8);
+  background-color: var(--clr-primary-7);
   border-radius: 5rem;
   width: 70%;
   margin: 2rem auto;
   padding: 2rem 0;
+  width: 100%;
+  max-width: 50rem;
+  color: var(--clr-grey-2);
 }
 
 .about-tools ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  padding: 1rem;
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .tools-icon {
