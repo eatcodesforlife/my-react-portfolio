@@ -2,6 +2,7 @@ import React from 'react'
 import me from '../imgs/me.svg'
 import { DiHtml5, DiCss3, DiJsBadge, DiHeroku, DiSass, DiNodejs, DiMongodb, DiReact} from 'react-icons/di'
 import { BsFillBootstrapFill } from 'react-icons/bs'
+import { FaGithub } from 'react-icons/fa'
 
 const About = () => {
     return (
@@ -29,6 +30,7 @@ const About = () => {
                             <li>Express.js</li>
                             <li className='tools-icon'><DiReact /></li>
                             <li className='tools-icon'><DiNodejs /></li>
+                            <li className='tools-icon'><FaGithub /></li>
                         </ul>
                     </div>
                 </article>
