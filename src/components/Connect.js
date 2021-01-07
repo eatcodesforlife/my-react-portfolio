@@ -22,9 +22,9 @@ const Connect = () => {
                         ))
                     }
                 </ul>
-                <form className='form' name='contact' action="post">
-                    <input type="hidden" name="form-name" value='contact'/>
+                <form className='form' name='contact' method="post">
                     <div className="input-container">
+                        <input type="hidden" name="form-name" value='contact'/>
                         <div className="form-control">
                         <input placeholder='YOUR NAME' type="text" name='name' required/>
                         </div>
