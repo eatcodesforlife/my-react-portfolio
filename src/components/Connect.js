@@ -1,11 +1,10 @@
 import React from 'react'
 import { social } from '../utils/links'
+import { SiNetlify } from 'react-icons/si'
 
 const Connect = () => {
 
-    const handleSubmit = (e) => {
-        e.preventDefault()
-    }
+    
     return (
         <section className='section contactme'>
             <h2 className='section-title'>Connect with me</h2>
@@ -38,6 +37,7 @@ const Connect = () => {
                     <button type='submit' >Send</button>
                 </form>
             </div>
+            <span>Form is powered by <SiNetlify /></span>
         </section>
     )
 }
