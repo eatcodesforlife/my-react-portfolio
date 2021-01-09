@@ -184,7 +184,7 @@ p {
 
 /* navbar */
 nav {
-  background: var(--transparent-1);
+  background: transparent;
   position: fixed;
   width: 100%;
   z-index: 5;
