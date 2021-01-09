@@ -31,7 +31,7 @@ const Connect = () => {
                             <input placeholder='YOUR EMAIL' type="email" name='email' required/>
                         </div>                
                         <div className="form-control">
-                            <textarea placeholder='YOUR MESSAGE' type="text" name='name' required/>
+                            <textarea placeholder='YOUR MESSAGE' type="text" name='message' required/>
                         </div>
                     </div>
                     <button type='submit' >Send</button>
