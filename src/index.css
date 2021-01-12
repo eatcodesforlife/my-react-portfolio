@@ -176,72 +176,40 @@ p {
 .underline {
   height: 0.3rem;
   width: 7rem;
-  align-self: center;
-  background-color: white;
   border-radius: var(--borderRadius);
   margin-bottom: 5rem;
 }
 
 /* navbar */
-nav {
-  background: transparent;
-  position: fixed;
+.nav-container {
+  position: relative;
+}
+.nav {
+  position: absolute;
   width: 100%;
-  z-index: 5;
-}
-
-.nav-header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 1rem;
-}
-.nav-toggle {
-  display: grid;
-  place-items: center;
-  border-color: transparent;
-  cursor: pointer;
-  font-size: 1.5rem;
-  color: var(--clr-primary-6);
-  transition: var(--transition);
-  background-color: transparent;
-}
-
-.nav-toggle:hover {
-  color: var(--clr-primary-3);
-}
-
-.nav-toggle.rotate {
-  transform: rotate(90deg);
+  align-items: center;
+  background-color: none;
 }
 
 .logo {
-  margin-left: 1rem;
-  height: 40px;
+  position: relative;
 }
-
-.links-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 0px;
-  overflow: hidden;
-  transition: var(--transition);
+.logo img {
+  height: 2rem;
 }
-
-.links-url {
-  color: var(--clr-grey-9);
-  font-size: 1rem;
-  text-transform: capitalize;
-  font-weight: 500;
-  letter-spacing: var(--spacing);
-  display: block;
-  padding: 1rem;
+.nav-button {
+  display: grid;
+  place-items: center;
+  padding: 0;
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  z-index: 10;
 }
-
-.social-icons {
-  display: none;
+.nav-button.rotate {
+  transform: rotate(90deg);
 }
 
 /* hero */
@@ -255,7 +223,7 @@ nav {
   width: 100vw;
   display: grid;
   place-items: center;
-  background-color: rgb(36, 58, 82, 0.9);
+  background-color: var(--transparent-1);
   text-align: center;
 }
 .hero-center h1 {
@@ -426,19 +394,19 @@ a {
   height: 70vh;
 }
 
-.contactme-social {
+.contactme .social-links {
   display: flex;
   justify-content: space-around;
   width: 100%;
   max-width: 500px;
 }
 
-.contactme-social a {
+.contactme .social-links a {
   color: var(--clr-primary-7);
   font-size: 1.5rem;
   cursor: pointer;
 }
-.contactme-social a:hover {
+.contactme .social-links a:hover {
   color: var(--clr-primary-5);
 }
 
@@ -498,48 +466,6 @@ textarea {
 }
 
 @media screen and (min-width: 800px) {
-  .nav-center {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
-    background-color: transparent;
-  }
-
-  .nav-header {
-    padding: 0;
-  }
-
-  .nav-toggle {
-    display: none;
-  }
-
-  .links-container {
-    height: auto !important;
-  }
-
-  .links {
-    display: flex;
-  }
-
-  .links-url {
-    padding: 0;
-    margin: 0 0.5rem;
-  }
-
-  .social-icons {
-    display: flex;
-  }
-
-  .social-icons a {
-    margin: 0 0.5rem;
-    color: var(--clr-primary-7);
-  }
-
-  .social-icons a:hover {
-    color: var(--clr-primary-4);
-  }
-
   .hero-info h1 {
     font-size: 3rem;
   }

@@ -1,6 +1,6 @@
 import React from 'react'
-import { social } from '../utils/links'
 import { SiNetlify } from 'react-icons/si'
+import SocialLinks from './SocialLinks'
 
 const Connect = () => {
 
@@ -10,17 +10,7 @@ const Connect = () => {
             <h2 className='section-title'>Connect with me</h2>
             <div className="underline"></div>
             <div className="contactme-center">
-                <ul className="contactme-social">
-                    {
-                        social.map( ({id, url, icon}) => (
-                            <li key={id} className="contactme-link">
-                                <a href={url} target='_blank' rel='noreferrer'>
-                                    {icon}
-                                </a>
-                            </li>
-                        ))
-                    }
-                </ul>
+                <SocialLinks />
                 <form className='form' name='contact' action='/contact' method="post">
                     <div className="input-container">
                         <input type="hidden" name="form-name" value='contact'/>
