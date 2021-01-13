@@ -7,7 +7,7 @@ const SocialLinks = () => {
             <ul className="social-links">
                 {
                     social.map( ({id, url, icon}) => (
-                        <li key={id} className="contactme-link">
+                        <li key={id} >
                             <a href={url} target='_blank' rel='noreferrer'>
                                 {icon}
                             </a>
