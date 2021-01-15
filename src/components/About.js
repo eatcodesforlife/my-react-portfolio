@@ -14,8 +14,8 @@ const About = () => {
                     </article>
                     <div className="about-text">
                         <p>Hey, beautiful person who took the time to drop by my page! My friends call me Cris. I am a self-taught Frontend Developer and I build responsive websites from scratch.</p>
-                        <p>My non-tech roles have allowed me to gain exceptional soft skills and communication skills. I have gained my developer skills through sheer will and determination, passion, and love for software. Currently, I am looking for my first full-time development role with mentorship and room to grow.</p>
-                        <p>Other than coffee and tea, birthing ideas to life through code and seeing it improve lives and productivity of users is what excites me the most about being a developer.</p>
+                        <p>My non-tech roles have allowed me to gain exceptional soft skills and communication skills. I have gained my developer skills through sheer will and determination to learn coupled w/ passion, and love for software. Currently, I am looking for my first full-time development role with mentorship and room to grow.</p>
+                        <p>Other than the vast opportunities and possibilities that tech has to offer, birthing ideas to life through code and seeing it improve lives and productivity of the users is what excites me the most about being a developer.</p>
                     </div>
                     <div className="about-tools">
                         <h3>my tools</h3>
