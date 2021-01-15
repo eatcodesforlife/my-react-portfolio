@@ -11,7 +11,8 @@ import {
     DiGit
 } from 'react-icons/di'
 import { BsFillBootstrapFill } from 'react-icons/bs'
-import { SiVisualstudiocode } from 'react-icons/si'
+import { SiVisualstudiocode, SiNetlify } from 'react-icons/si'
+
 
 export const social = [
     {
@@ -114,5 +115,10 @@ export const toolIcons = [
         id: 13,
         icon: <FaGithub/>,
         text: 'Github'
+    },    
+    { 
+        id: 14,
+        icon: <SiNetlify/>,
+        text: 'Netlify'
     }
 ]

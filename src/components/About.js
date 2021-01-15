@@ -13,12 +13,13 @@ const About = () => {
                         <img src={me} alt="cris"/>
                     </article>
                     <div className="about-text">
-                        <p>Hey, beautiful person who took the time to drop by my page! My name is Cris. I am a self-taught Software Developer and I build responsive websites from scratch.</p>
-                        <p>Other than coffee and tea, birthing ideas to life through code and seeing it improve lives and productivity of users is what excites me the most about being a Software Developer.</p>
-                        {/* <p>I am currently looking for my first job as a Software Developer.</p> */}
+                        <p>Hey, beautiful person who took the time to drop by my page! My friends call me Cris. I am a self-taught Frontend Developer and I build responsive websites from scratch.</p>
+                        <p>My non-tech roles have allowed me to gain exceptional soft skills and communication skills. I have gained my developer skills through sheer will and determination, passion, and love for software. Currently, I am looking for my first full-time development role with mentorship and room to grow.</p>
+                        <p>Other than coffee and tea, birthing ideas to life through code and seeing it improve lives and productivity of users is what excites me the most about being a developer.</p>
                     </div>
                     <div className="about-tools">
                         <h3>my tools</h3>
+                        <div className="underline"></div>
                         <ul className='about-info-tools'>
                             {
                                 toolIcons.map(({ id, icon, text }) => (
@@ -28,7 +29,6 @@ const About = () => {
                                     </li>
                                 ))
                             }
-                            <li>Express.js</li>
                         </ul>
                     </div>
                 </article>

@@ -472,6 +472,12 @@ a {
   width: 100%;
 }
 
+.about-tools .underline {
+  background-color: var(--clr-grey-2);
+  margin-bottom: 10px;
+  width: 4rem;
+}
+
 .tools-icon {
   padding: 1rem;
   font-size: 2.5rem;
