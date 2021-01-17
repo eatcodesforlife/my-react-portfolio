@@ -293,9 +293,12 @@ p {
 .menu-links ul li {
   padding: 1rem;
 }
+
 .url-text {
-  text-transform: uppercase;
   color: var(--clr-grey-9);
+}
+.url-text h3 {
+  text-transform: uppercase;
 }
 .menu-links.show {
   right: 100%;
@@ -303,6 +306,11 @@ p {
 .menu-container.show,
 .menu-social.show {
   transform: translate(0);
+}
+
+.active-menu {
+  font-weight: 900;
+  color: var(--clr-primary-6);
 }
 
 /********** hero **********/
@@ -438,7 +446,6 @@ a {
 }
 
 .about-info {
-  /* border: 2px solid var(--clr-secondary-1); */
   border-radius: 10rem;
   padding-right: 2rem;
   padding-left: 2rem;
@@ -492,7 +499,7 @@ a {
   font-weight: 500;
 }
 
-/* contact */
+/*** contact ***/
 
 .contactme .underline {
   background-color: var(--clr-secondary-5);
@@ -568,7 +575,49 @@ textarea {
   background-color: var(--clr-secondary-5);
 }
 
-/* screen sizes */
+/**** loader animation ****/
+
+.loader {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: auto;
+}
+
+.loader h3 {
+  align-self: flex-end;
+  margin-right: 5px;
+  margin-bottom: 0px;
+  color: var(--clr-tertiary-1);
+}
+
+.loader > span {
+  background-color: var(--clr-secondary-5);
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-bottom: 3px;
+  animation: bounce 0.7s infinite alternate;
+}
+
+.loader > span:nth-child(3) {
+  background-color: var(--clr-primary-5);
+  animation-delay: 0.2s;
+}
+
+.loader > span:nth-child(4) {
+  background-color: var(--clr-tertiary-5);
+  animation-delay: 0.5s;
+}
+
+@keyframes bounce {
+  to {
+    transform: translate3d(0, -4px, 0);
+  }
+}
+
+/*** screen sizes ***/
 
 @media screen and (max-width: 300px) {
   .about-img {

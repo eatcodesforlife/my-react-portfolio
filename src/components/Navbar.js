@@ -6,7 +6,12 @@ import Sidemenu from './Sidemenu'
 const Navbar = () => {
 
     const [ isShowMenu, setIsShowMenu ] = useState(false)
+    const [ currentMenu, setCurrentMenu ] = useState('home')
 
+    const handleMenu = (menu) => {
+        setIsShowMenu(!isShowMenu)
+        setCurrentMenu(menu)
+    }
     
     return (
         <div className="nav-container">
@@ -20,7 +25,11 @@ const Navbar = () => {
                     </button>
                 </div>
             </nav>
-            <Sidemenu isShowMenu={isShowMenu} setIsShowMenu={setIsShowMenu}/>
+            <Sidemenu 
+                isShowMenu={isShowMenu} 
+                handleMenu={handleMenu} 
+                currentMenu={currentMenu}
+            />
         </div>
     )
 }
