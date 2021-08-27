@@ -14,7 +14,7 @@ const Connect = () => {
                 <form 
                     className='form' 
                     name='contact' 
-                    action='/thankyou' 
+                    action='/thankyou/' 
                     method="post"
                     data-netlify='true'
                     onSubmit='submit'
