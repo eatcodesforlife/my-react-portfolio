@@ -14,11 +14,9 @@ const Connect = () => {
                 <form 
                     className='form' 
                     name='contact' 
-                    action='/thankyou/' 
+                    action='/thankyou' 
                     method="post"
                     data-netlify='true'
-                    onSubmit='submit'
-                    netlify 
                     netlify-honeypot="bot-field"
                 >
                     <input type="hidden" name="form-name" value='contact'/>

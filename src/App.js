@@ -4,9 +4,10 @@ import About from './components/About'
 import Home from './components/Home'
 import Projects from './components/Projects'
 import Navbar from './components/Navbar'
-import Connect from './components/Connect'
+// import Connect from './components/Connect'
 import Error from './components/Errorpage'
 import Thankyou from './components/Thankyou'
+import ContactFormTest from './components/ContactFormTest'
 
 function App() {
   return (
@@ -24,7 +25,8 @@ function App() {
             <Projects />
           </Route>
           <Route path='/contact'>
-            <Connect />
+            {/* <Connect /> */}
+            <ContactFormTest />
           </Route>
           <Route path='/thankyou'>
             <Thankyou />
