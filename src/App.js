@@ -6,6 +6,7 @@ import Projects from './components/Projects'
 import Navbar from './components/Navbar'
 import Connect from './components/Connect'
 import Error from './components/Errorpage'
+import Thankyou from './components/Thankyou'
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
           </Route>
           <Route path='/contact'>
             <Connect />
+          </Route>
+          <Route path='/thankyou'>
+            <Thankyou />
           </Route>
           <Route path='/*'>
             <Error />

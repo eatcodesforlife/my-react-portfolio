@@ -11,9 +11,21 @@ const Connect = () => {
             <div className="underline"></div>
             <div className="contactme-center">
                 <SocialLinks />
-                <form className='form' name='contact' action='/contact' method="post">
+                <form 
+                    className='form' 
+                    name='contact' 
+                    action='/contact' 
+                    method="post"
+                    data-netlify='true'
+                    onSubmit='submit'
+                    netlify 
+                    netlify-honeypot="bot-field"
+                >
+                    <input type="hidden" name="form-name" value='contact'/>
+                    <div hidden>
+                        <input name='bot-field'/>
+                    </div>
                     <div className="input-container">
-                        <input type="hidden" name="form-name" value='contact'/>
                         <div className="form-control">
                         <input placeholder='YOUR NAME' type="text" name='name' required/>
                         </div>

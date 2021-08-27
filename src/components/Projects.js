@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Loading from './Loading'
+import FeaturedProjects from './FeaturedProjects'
 import { FaGithub } from 'react-icons/fa'
 import { HiDesktopComputer } from 'react-icons/hi'
 
@@ -27,6 +28,8 @@ const Projects = () => {
         <section className="section projects">
             <h2 className="section-title">Projects</h2>
             <div className="underline"></div>
+            
+            <FeaturedProjects />  
             {
                 isLoading 
                 ? <Loading />
