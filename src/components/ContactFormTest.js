@@ -5,38 +5,33 @@ import SocialLinks from './SocialLinks'
 
 const ContactFormTest = () => {
 
-
+  const [ formData, setFormData ] = useState({
+    name: "",
+    email: "",
+    message: ""
+  })
   const encode = (data) => {
     return Object.keys(data)
         .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
         .join("&");
   }
 
-  
-  const [ contactFormData, setContactFormData ] = useState( {
-    name: '',
-    email: '',
-    message: ''
-  })
-
-  const handeleChange = (e) => {
-    setContactFormData({[e.target.name]:e.target.value})
-    
+  const handleChange = (e) => {
+    setFormData({ [e.target.name]: e.target.value })
   }
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault()
-    await fetch("/thankyou", {
+    fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encode({"form-name": "contact", ...contactFormData })
+        body: encode({ "form-name": "contact", ...formData })
       })
         .then(() => alert("Success!"))
         .catch(error => alert(error));
 
   }
 
-  console.log( contactFormData )
   return (
     <section className='section contactme'>
             <h2 className='section-title'>Connect with me</h2>
@@ -46,7 +41,6 @@ const ContactFormTest = () => {
                 <form 
                     className='form' 
                     name='contact' 
-                    action='/thankyou' 
                     method="post"
                     data-netlify='true'
                     netlify-honeypot="bot-field"
@@ -57,24 +51,28 @@ const ContactFormTest = () => {
                     </div>
                     <div className="input-container">
                         <div className="form-control">
-                        <input placeholder='YOUR NAME' type="text" name='name' value={contactFormData.name} 
-                        onChange={handeleChange}
-                        required/>
+                          <input placeholder='YOUR NAME' type="text" name='name' 
+                            value={formData.name}
+                            onChange={handleChange}
+                            required
+                          />
                         </div>
                         <div className="form-control">
-                            <input placeholder='YOUR EMAIL' type="email"  
-                            name='email' 
-                            value={contactFormData.email}
-                            onChange={handeleChange}
-                            required/>
+                          <input placeholder='YOUR EMAIL' type="email" name='email' 
+                            value={formData.email}
+                            onChange={handleChange}
+                            required
+                          />
                         </div>                
                         <div className="form-control">
-                            <textarea placeholder='YOUR MESSAGE' type="text" name='message' value={contactFormData.message} 
-                            onChange={handeleChange}
-                            required/>
+                          <textarea placeholder='YOUR MESSAGE' type="text" name='message' 
+                            value={formData.message}
+                            onChange={handleChange}
+                            required
+                          />
                         </div>
                     </div>
-                    <button type='submit' onClick={()=>handleSubmit} >Send</button>
+                    <button type='submit' onClick={()=>handleSubmit}>Send</button>
                 </form>
             </div>
         </section>
