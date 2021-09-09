@@ -47,7 +47,7 @@ const ContactFormTest = () => {
                 >
                     <input type="hidden" name="form-name" value='contact'/>
                     <div hidden>
-                        <input name='bot-field'/>
+                      <input name='bot-field'/>
                     </div>
                     <div className="input-container">
                         <div className="form-control">
