@@ -13,7 +13,6 @@ const Connect = () => {
                 <form 
                     className='form' 
                     name='contact' 
-                    action='/thankyou' 
                     method="post"
                     data-netlify='true'
                     netlify-honeypot="bot-field"
