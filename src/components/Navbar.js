@@ -20,7 +20,10 @@ const Navbar = () => {
                     <img src={logo} alt="logo"/>
                 </div>
                 <div>
-                    <button className={`nav-button ${isShowMenu && "rotate"}`} onClick={() => setIsShowMenu(!isShowMenu)}>
+                    <button 
+                        className={`nav-button ${isShowMenu && "rotate"}`} 
+                        onClick={() => setIsShowMenu(!isShowMenu)}
+                    >
                         <FaBars />
                     </button>
                 </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaNodeJs, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import { FaNodeJs, FaGithub, FaLinkedin, FaTwitter, FaNpm } from 'react-icons/fa'
 import { 
     DiHtml5, 
     DiCss3, 
@@ -11,7 +11,7 @@ import {
     DiGit
 } from 'react-icons/di'
 import { BsFillBootstrapFill } from 'react-icons/bs'
-import { SiVisualstudiocode, SiNetlify } from 'react-icons/si'
+import { SiVisualstudiocode, SiNetlify, SiGatsby, SiNextDotJs, SiTailwindcss } from 'react-icons/si'
 
 
 export const social = [
@@ -120,5 +120,25 @@ export const toolIcons = [
         id: 14,
         icon: <SiNetlify/>,
         text: 'Netlify'
+    },
+    { 
+        id: 15,
+        icon: <FaNpm/>,
+        text: 'npm'
+    },
+    { 
+        id: 16,
+        icon: <SiGatsby/>,
+        text: 'Gatsbyjs'
+    },
+    { 
+        id: 17,
+        icon: <SiNextDotJs/>,
+        text: 'Nextjs'
+    },
+    {
+        id: 18,
+        icon: <SiTailwindcss/>,
+        text: 'Tailwindcss'
     }
 ]

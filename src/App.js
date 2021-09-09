@@ -2,12 +2,11 @@ import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import About from './components/About'
 import Home from './components/Home'
-import Projects from './components/Projects'
+import MiniProjects from './components/MiniProjects'
 import Navbar from './components/Navbar'
-// import Connect from './components/Connect'
+import Connect from './components/Connect'
 import Error from './components/Errorpage'
-import Thankyou from './components/Thankyou'
-import ContactFormTest from './components/ContactFormTest'
+import Projects from './components/Projects'
 
 function App() {
   return (
@@ -24,12 +23,11 @@ function App() {
           <Route path='/projects'>
             <Projects />
           </Route>
-          <Route path='/contact'>
-            {/* <Connect /> */}
-            <ContactFormTest />
+          <Route path='/miniprojects'>
+            <MiniProjects />
           </Route>
-          <Route path='/thankyou'>
-            <Thankyou />
+          <Route path='/contact'>
+            <Connect />
           </Route>
           <Route path='/*'>
             <Error />

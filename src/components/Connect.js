@@ -1,5 +1,4 @@
 import React from 'react'
-import { SiNetlify } from 'react-icons/si'
 import SocialLinks from './SocialLinks'
 
 const Connect = () => {
@@ -37,7 +36,6 @@ const Connect = () => {
                     <button type='submit' >Send</button>
                 </form>
             </div>
-            <span>Form is powered by <SiNetlify /></span>
         </section>
     )
 }

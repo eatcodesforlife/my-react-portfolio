@@ -1,5 +1,4 @@
 import React from 'react'
-import me from '../imgs/me.svg'
 import { toolIcons } from '../utils/links'
 
 const About = () => {
@@ -9,16 +8,13 @@ const About = () => {
             <div className="underline"></div>
             <div className="about-center">
                 <article className='about-info'>
-                    <article className="about-img">
-                        <img src={me} alt="cris"/>
-                    </article>
                     <div className="about-text">
-                        <p>Hey, beautiful person who took the time to drop by my page! My friends call me Cris. I am a self-taught Frontend Developer and I build responsive websites from scratch.</p>
-                        <p>My non-tech roles have allowed me to gain exceptional soft skills and communication skills. I have gained my developer skills through sheer will and determination to learn coupled w/ passion, and love for software. Currently, I am looking for my first full-time development role with mentorship and room to grow.</p>
+                        <p>Hey there. Thanks for dropping by! My friends call me Cris and I am a proudly self-taught Software Developer. I love building responsive websites from scratch using bleeding edge technologies like React, Gatsby and Nextjs.</p>
+                        <p>My non-tech roles have allowed me to gain exceptional soft skills and communication skills.  My passion for Software Development coupled with my inate curiosity and help of caffeine has allowed to gain my developer skills inspite of my non-tech 9-5 job.</p>
                         <p>Other than the vast opportunities and possibilities that tech has to offer, birthing ideas to life through code and seeing it improve lives and productivity of the users is what excites me the most about being a developer.</p>
                     </div>
                     <div className="about-tools">
-                        <h3>my tools</h3>
+                        <h3>Tools that I use to build stuff</h3>
                         <div className="underline"></div>
                         <ul className='about-info-tools'>
                             {
