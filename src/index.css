@@ -417,8 +417,9 @@ p {
 .project-url p:hover {
   background-color: var(--clr-primary-9);
   color: var(--var-primary-9);
-  transition: 0.3s ease-in-out;
+  transition: var(--transition);
   color: var(--clr-grey-2);
+  box-shadow: var(--light-shadow);
 }
 
 /* mini projects tile */
