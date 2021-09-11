@@ -698,15 +698,6 @@ textarea {
 
 /*** screen sizes ***/
 
-@media screen and (max-width: 300px) {
-  .about-img {
-    width: 190px;
-  }
-  .about-img img {
-    height: 10rem;
-  }
-}
-
 @media screen and (min-width: 450px) {
   .logo {
     padding: 1rem;
@@ -717,10 +708,6 @@ textarea {
 
   .nav-button {
     font-size: 1.75rem;
-  }
-
-  .about-img {
-    width: 250px;
   }
 }
 
