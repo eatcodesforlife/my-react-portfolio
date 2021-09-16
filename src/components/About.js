@@ -9,8 +9,8 @@ const About = () => {
             <div className="about-center">
                 <article className='about-info'>
                     <div className="about-text">
-                        <p>Thanks for dropping by! My friends call me Cris. I am a proudly self-taught Web Developer. I love building responsive web apps from scratch using bleeding edge technologies like React, Gatsby and Nextjs.</p>
-                        
+                        <p>Thanks for dropping by! My friends call me Cris. I am a proudly self-taught Software Developer. I love building responsive web apps from scratch using bleeding edge technologies like React, Gatsby and Nextjs.</p>
+
                         <p>Other than the vast opportunities and possibilities that Software Development has to offer, birthing ideas to life through code, seeing it improve the lives and productivity of the users, and just learning new things are what excites me the most about being a developer.</p>
                     </div>
                     <div className="about-tools">
