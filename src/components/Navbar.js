@@ -18,6 +18,7 @@ const Navbar = () => {
             <nav className='nav'>
                 <div className="logo">
                     <img src={logo} alt="logo"/>
+                    <h5>crisacosta</h5>
                 </div>
                 <div>
                     <button 

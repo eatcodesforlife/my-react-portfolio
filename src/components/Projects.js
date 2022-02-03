@@ -22,9 +22,11 @@ const Projects = () => {
         fetchProject()
     }, [])
   return (
-    <section className="section projects">
+    <section className="section projects" id='projects-section'>
       <h2 className="section-title">Projects</h2>
-      <div className="underline"></div>
+      <span className="watermark">
+        <h1>projects</h1>
+      </span>
       {
         isLoading ? <Loading /> 
         : (

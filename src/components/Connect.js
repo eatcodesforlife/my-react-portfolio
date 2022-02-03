@@ -6,8 +6,10 @@ const Connect = () => {
     
     return (
         <section className='section contactme'>
-            <h2 className='section-title'>Connect with me</h2>
-            <div className="underline"></div>
+            <h2 className='section-title'>Contact me</h2>
+            <span className='watermark'>
+                <h1>contact</h1>
+            </span>
             <div className="contactme-center">
                 <SocialLinks />
                 <form 
