@@ -427,6 +427,7 @@ p {
 }
 
 .hero-info .hero-call-to-action img {
+  margin-bottom: 10vh;
   animation: bounce 0.7s infinite alternate;
 }
 
