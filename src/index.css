@@ -324,8 +324,8 @@ p {
   position: absolute;
   top: 10%;
   right: 0;
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
   background-color: transparent;
   opacity: 0.1;
   text-overflow: clip;
@@ -333,7 +333,6 @@ p {
   white-space: wrap;
   display: inline-flex;
   flex-wrap: wrap;
-  z-index: -1;
 }
 
 .watermark h1 {
