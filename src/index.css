@@ -180,13 +180,6 @@ p {
   padding: 1rem;
 }
 
-.underline {
-  height: 0.3rem;
-  width: 7rem;
-  border-radius: var(--borderRadius);
-  margin-bottom: 5rem;
-}
-
 .social-links {
   display: flex;
 }
@@ -205,11 +198,13 @@ p {
 /* navbar */
 .nav-container {
   position: relative;
-  z-index: 100;
+  z-index: 1000;
 }
 .nav {
   position: absolute;
-  width: 100%;
+  width: 90vw;
+  margin: 0 auto;
+  max-width: var(--max-width);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -217,6 +212,7 @@ p {
 }
 
 .logo {
+  margin-top: 7px;
   position: relative;
   padding: 0.5rem;
 }
@@ -227,20 +223,20 @@ p {
   transition: var(--transition);
   border: none;
   background-color: transparent;
-  color: var(--clr-primary-6);
-  font-size: 1.2rem;
+  color: var(--clr-primary-7);
+  font-size: 1.6rem;
   display: grid;
   place-items: center;
   padding: 0;
   position: fixed;
-  right: 15px;
-  top: 15px;
-  z-index: 50;
+  right: 20px;
+  top: 20px;
+  z-index: 100;
   cursor: pointer;
 }
 
 .nav-button:hover {
-  color: var(--clr-primary-4);
+  color: var(--clr-primary-6);
 }
 .nav-button.rotate {
   transform: rotate(90deg);
@@ -271,7 +267,9 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  padding: 0;
+  margin: 0;
+  height: 30vh;
 }
 .menu-social .social-links a {
   font-size: 1.2rem;
@@ -282,16 +280,19 @@ p {
 .menu-links {
   position: absolute;
   top: 0;
+  padding: 0;
   right: -100%;
   width: 100%;
   height: 70vh;
   transition: var(--transition);
   transform: translate(100%);
+  background-color: var(--clr-grey-1);
 }
 .menu-links ul {
-  height: 100%;
+  height: 70vh;
+  margin: 0;
+  padding: 0;
   background-color: var(--transparent-1);
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -389,6 +390,8 @@ p {
   font-size: 1.5rem;
   transition: var(--transition);
   bottom: 0;
+  height: auto;
+  width: auto;
 }
 
 .hero-info .hero-call-to-action p {
