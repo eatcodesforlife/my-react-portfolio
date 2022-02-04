@@ -229,8 +229,8 @@ p {
   place-items: center;
   padding: 0;
   position: fixed;
-  right: 20px;
-  top: 20px;
+  right: 18px;
+  top: 17px;
   z-index: 100;
   cursor: pointer;
 }
