@@ -32,7 +32,6 @@ const Connect = () => {
                     data-netlify='true'
                     netlify-honeypot="bot-field"
                     action='/messagesent'
-                    onSubmit={() => submitHandler}
                 >
                     <input type="hidden" name="form-name" value='contact'/>
                     <div hidden>
