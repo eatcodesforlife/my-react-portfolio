@@ -1,43 +1,28 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import About from './components/About'
-import Home from './components/Home'
-import MiniProjects from './components/MiniProjects'
-import Navbar from './components/Navbar'
-import Connect from './components/Connect'
-import Error from './components/Errorpage'
-import Projects from './components/Projects'
-import SubmissionSuccess from './components/SubmissionSuccess'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import About from './pages/About'
+import Home from './pages/Home'
+import Connect from './pages/Connect'
+import Projects from './pages/Projects'
+import SubmissionSuccess from './pages/SubmissionSuccess'
+import Layout from './pages/Layout'
+import Hero from './pages/Hero'
 
 function App() {
   return (
     <div className='main-container'>
-      <Router>
-        <Navbar />
-        <Switch>
-          <Route exact path='/'>
-            <Home />
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Layout />}>
+            <Route index element={<Home />}/>
+            <Route path='hero' element={<Hero />}/>
+            <Route path='projects' element={<Projects />}/>
+            <Route path='about' element={<About />}/>
+            <Route path='contact' element={<Connect />}/>
+            <Route path='/messagesent' element={<SubmissionSuccess />}/>
           </Route>
-          <Route path='/about'>
-            <About />
-          </Route>
-          <Route path='/projects'>
-            <Projects />
-          </Route>
-          <Route path='/miniprojects'>
-            <MiniProjects />
-          </Route>
-          <Route path='/contact'>
-            <Connect />
-          </Route>
-          <Route path='/messagesent'>
-            <SubmissionSuccess />
-          </Route>
-          <Route path='/*'>
-            <Error />
-          </Route>
-        </Switch>
-      </Router>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

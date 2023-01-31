@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { BiLinkExternal } from 'react-icons/bi'
 import { Link } from 'react-router-dom'
-import Loading from './Loading'
+import Loading from '../components/Loading'
 import miniProjectThumbNail from '../imgs/react-mini-projects.jpg'
 
 const url = 'https://react-portfolio-api.herokuapp.com/featureProjects'

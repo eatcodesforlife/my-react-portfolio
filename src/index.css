@@ -374,8 +374,13 @@ p {
   height: 100%;
 }
 
-.hero-info .hero-ad {
+.hero-info .hero-ad{
   z-index: 10;
+}
+.hero-info .hero-ad h3 {
+  font-size: 10rem;
+  font-weight: 900;
+  line-height: 5rem;
 }
 .hero-info .hero-call-to-action {
   position: relative;

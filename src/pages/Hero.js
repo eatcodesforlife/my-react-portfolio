@@ -7,6 +7,7 @@ const Hero = () => {
           <div className="hero-overlay">            
           </div>
           <span className='watermark'>
+            <h1>Hi! My name is Cris!</h1>
             <h1>software developer</h1>
           </span>
           <div className="hero-center">
@@ -15,16 +16,17 @@ const Hero = () => {
                 <div className='hero-ad-glass hero-glass-nuemorphism'></div>
                 <h3>Let's</h3>
                 <h3><span>build</span></h3>
-                <h3><span>awesome things</span></h3>
-                <h3>on the web.</h3>
+                <h3>awesome<span> things</span></h3>
+                <h3>on the</h3>
+                <h3><span>web</span>.</h3>
               </div>
-              <span className='hero-call-to-action'> 
+              {/* <span className='hero-call-to-action'> 
                 <div className='hero-call-to-acion-glass hero-glass-nuemorphism'></div>
                 <a href="#projects-section"><p>explore</p></a>
                 <a href="#projects-section">
                   <img src={arrowImg} alt="arrow" />
                 </a>
-              </span>
+              </span> */}
             </article>
           </div>
         </section>

@@ -1,7 +1,9 @@
-import SocialLinks from './SocialLinks'
-import { useNavigate } from "react-router-dom";
+import SocialLinks from '../components/SocialLinks'
+import { Redirect } from "react-router-dom";
+
+
 const Connect = () => {
-    let navigate = useNavigate()
+
     const submitHandler = (e) =>{
         e.preventDefault();
         let myForm = document.getElementById("contact-form");
@@ -11,7 +13,7 @@ const Connect = () => {
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams(formData).toString(),
         })
-        .then(() => navigate('/messagesent'))
+        .then(() =>  console.log('hello world'))
         .catch((error) => alert(error));
     }
     
