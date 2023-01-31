@@ -1,6 +1,5 @@
-import React from 'react'
 import SocialLinks from './SocialLinks'
-
+import { useNavigate } from "react-router-dom";
 const Connect = () => {
     let navigate = useNavigate()
     const submitHandler = (e) =>{
