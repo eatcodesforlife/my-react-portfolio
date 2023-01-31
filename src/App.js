@@ -7,6 +7,7 @@ import Navbar from './components/Navbar'
 import Connect from './components/Connect'
 import Error from './components/Errorpage'
 import Projects from './components/Projects'
+import SubmissionSuccess from './components/SubmissionSuccess'
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
           </Route>
           <Route path='/contact'>
             <Connect />
+          </Route>
+          <Route path='/messagesent'>
+            <SubmissionSuccess />
           </Route>
           <Route path='/*'>
             <Error />

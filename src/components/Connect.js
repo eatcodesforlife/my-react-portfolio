@@ -18,7 +18,7 @@ const Connect = () => {
                     method="post"
                     data-netlify='true'
                     netlify-honeypot="bot-field"
-                    onSubmit={(e) => e.preventDefault()}
+                    action='/messagesent'
                 >
                     <input type="hidden" name="form-name" value='contact'/>
                     <div hidden>
