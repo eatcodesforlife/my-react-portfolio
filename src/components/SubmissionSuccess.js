@@ -2,9 +2,9 @@ import React from 'react'
 
 const SubmissionSuccess = () => {
   return (
-    <div>
+    <section className='section'>
         <h1>message sent</h1>
-    </div>
+    </section>
   )
 }
 
