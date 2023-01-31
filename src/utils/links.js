@@ -11,7 +11,8 @@ import {
     DiGit
 } from 'react-icons/di'
 import { BsFillBootstrapFill } from 'react-icons/bs'
-import { SiVisualstudiocode, SiNetlify, SiGatsby, SiNextDotJs, SiTailwindcss } from 'react-icons/si'
+import { SiVisualstudiocode, SiNetlify, SiGatsby,  SiTailwindcss} from 'react-icons/si'
+import { TbBrandNextjs } from 'react-icons/tb'
 
 
 export const social = [
@@ -133,7 +134,7 @@ export const toolIcons = [
     },
     { 
         id: 17,
-        icon: <SiNextDotJs/>,
+        icon: <TbBrandNextjs/>,
         text: 'Nextjs'
     },
     {
