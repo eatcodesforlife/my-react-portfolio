@@ -5,7 +5,7 @@ import { redirect } from "react-router-dom";
 const Connect = () => {
 
     const submitHandler = (e) =>{
-        e.preventDefault();
+        // e.preventDefault();
         let myForm = document.getElementById("contact-form");
         let formData = new FormData(myForm);
         fetch("/", {
