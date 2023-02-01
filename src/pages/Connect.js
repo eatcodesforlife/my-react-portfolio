@@ -1,11 +1,11 @@
 import SocialLinks from '../components/SocialLinks'
-import { redirect } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
 const Connect = () => {
-
+    const navigate = useNavigate()
     const submitHandler = (e) =>{
-        // e.preventDefault();
+        e.preventDefault();
         let myForm = document.getElementById("contact-form");
         let formData = new FormData(myForm);
         fetch("/", {
@@ -13,7 +13,7 @@ const Connect = () => {
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams(formData).toString(),
         })
-        .then(() =>  redirect('/messagesent'))
+        .then(() =>  navigate('/messagesent'))
         .catch((error) => alert(error));
     }
     
