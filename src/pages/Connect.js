@@ -1,5 +1,5 @@
 import SocialLinks from '../components/SocialLinks'
-import { Redirect } from "react-router-dom";
+import { redirect } from "react-router-dom";
 
 
 const Connect = () => {
@@ -13,7 +13,7 @@ const Connect = () => {
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams(formData).toString(),
         })
-        .then(() =>  console.log('hello world'))
+        .then(() =>  redirect('/messagesent'))
         .catch((error) => alert(error));
     }
     
