@@ -15,7 +15,8 @@ const Sidemenu = ({ isShowMenu, currentMenu, handleMenu }) => {
                         navlinks.map( ({ id, url, text }) => (
                             <li key={id}>
                                 <Link to={url} className='url-text'>
-                                    <h3 onClick={() => handleMenu(text)} className={`${currentMenu === text && "active-menu"}`}>{text}</h3>
+                                    <h3 onClick={() => handleMenu(text)} 
+                                    className={`${currentMenu === text && "active-menu"}`}>{text}</h3>
                                 </Link>
                             </li>
                         ))

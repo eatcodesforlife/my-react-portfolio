@@ -7,6 +7,7 @@ import Projects from './pages/Projects'
 import SubmissionSuccess from './pages/SubmissionSuccess'
 import Layout from './pages/Layout'
 import Hero from './pages/Hero'
+import Errorpage from './pages/Errorpage'
 
 function App() {
   return (
@@ -15,11 +16,13 @@ function App() {
         <Routes>
           <Route path='/' element={<Layout />}>
             <Route index element={<Home />}/>
-            <Route path='hero' element={<Hero />}/>
-            <Route path='projects' element={<Projects />}/>
-            <Route path='about' element={<About />}/>
-            <Route path='contact' element={<Connect />}/>
+            <Route path='/hero' element={<Hero />}/>
+            <Route path='/projects' element={<Projects />}/>
+            <Route path='/about' element={<About />}/>
+            <Route path='/contact' element={<Connect />}/>
             <Route path='/messagesent' element={<SubmissionSuccess />}/>
+            <Route path='/*' element={<Errorpage />}/>
+
           </Route>
         </Routes>
       </BrowserRouter>
