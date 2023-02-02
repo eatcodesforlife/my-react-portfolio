@@ -4,7 +4,7 @@ import { FaGithub } from 'react-icons/fa'
 import { HiDesktopComputer } from 'react-icons/hi'
 import { BiLinkExternal } from 'react-icons/bi'
 
-const url = 'https://react-portfolio-api.herokuapp.com/projects'
+const url = 'https://my-portfolio-api.up.railway.app/projects'
 
 
 const MiniProjects = () => {

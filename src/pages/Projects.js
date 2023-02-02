@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import Loading from '../components/Loading'
 import miniProjectThumbNail from '../imgs/react-mini-projects.jpg'
 
-const url = 'https://react-portfolio-api.herokuapp.com/featureProjects'
+const url = 'https://my-portfolio-api.up.railway.app/featureProjects'
 const Projects = () => {
 
   const [ projects, setProjects ] = useState([])

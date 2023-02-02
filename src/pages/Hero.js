@@ -1,5 +1,4 @@
-import React from 'react'
-import arrowImg from '../imgs/arrow.svg'
+// import arrowImg from '../imgs/arrow.svg'
 
 const Hero = () => {
     return (
@@ -7,7 +6,6 @@ const Hero = () => {
           <div className="hero-overlay">            
           </div>
           <span className='watermark'>
-            <h1>Hi! My name is Cris!</h1>
             <h1>software developer</h1>
           </span>
           <div className="hero-center">
