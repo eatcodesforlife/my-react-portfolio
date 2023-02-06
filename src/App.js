@@ -2,7 +2,7 @@ import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import About from './pages/About'
 import Home from './pages/Home'
-import Connect from './pages/Connect'
+import Contact from './pages/Contact'
 import Projects from './pages/Projects'
 import SubmissionSuccess from './pages/SubmissionSuccess'
 import Layout from './pages/Layout'
@@ -19,7 +19,7 @@ function App() {
             <Route path='/hero' element={<Hero />}/>
             <Route path='/projects' element={<Projects />}/>
             <Route path='/about' element={<About />}/>
-            <Route path='/contact' element={<Connect />}/>
+            <Route path='/contact' element={<Contact />}/>
             <Route path='/messagesent' element={<SubmissionSuccess />}/>
             <Route path='/*' element={<Errorpage />}/>
 

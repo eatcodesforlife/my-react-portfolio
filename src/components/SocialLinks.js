@@ -8,7 +8,7 @@ const SocialLinks = () => {
                 {
                     social.map( ({id, url, icon}) => (
                         <li key={id} >
-                            <a href={url} target='_blank' rel='noreferrer'>
+                            <a href={url} target='_blank' rel='noopener noreferrer'>
                                 {icon}
                             </a>
                         </li>

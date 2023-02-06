@@ -53,9 +53,9 @@ const Projects = () => {
                       </ul>
                     </div>
                     <div className='project-links'>
-                      <a href={url} target='_blank' rel='noreferrer' className='project-url'>
+                      <a href={url} target='_blank' rel='noopener noreferrer' className='project-url'>
                         <BiLinkExternal/>DEMO</a>
-                      <a href={githubURL} target='_blank' rel='noreferrer'
+                      <a href={githubURL} target='_blank' rel='noopener noreferrer'
                       className='project-url'
                       ><BiLinkExternal/> GITHUB REPO</a>  
                     </div>

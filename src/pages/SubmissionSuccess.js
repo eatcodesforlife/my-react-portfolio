@@ -1,3 +1,5 @@
+import React from 'react';
+
 import Confetti from 'react-confetti'
 import HomeButton from '../components/HomeButton'
 

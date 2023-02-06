@@ -1,3 +1,5 @@
+
+import React from 'react';
 import SocialLinks from '../components/SocialLinks'
 import { useNavigate } from "react-router-dom";
 

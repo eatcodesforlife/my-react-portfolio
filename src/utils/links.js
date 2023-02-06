@@ -4,14 +4,12 @@ import {
     DiHtml5, 
     DiCss3, 
     DiJsBadge, 
-    DiHeroku, 
     DiSass, 
-    DiMongodb, 
     DiReact,
     DiGit
 } from 'react-icons/di'
 import { BsFillBootstrapFill } from 'react-icons/bs'
-import { SiVisualstudiocode, SiNetlify, SiGatsby,  SiTailwindcss} from 'react-icons/si'
+import { SiVisualstudiocode, SiNetlify, SiGatsby,  SiTailwindcss, SiTypescript} from 'react-icons/si'
 import { TbBrandNextjs } from 'react-icons/tb'
 
 
@@ -73,11 +71,6 @@ export const toolIcons = [
         text: 'CSS'
     },
     { 
-        id: 4,
-        icon: <DiHeroku />,
-        text: 'Heroku'
-    },
-    { 
         id: 5,
         icon: <BsFillBootstrapFill />,
         text: 'Bootstrap'
@@ -86,11 +79,6 @@ export const toolIcons = [
         id: 6,
         icon: <DiSass />,
         text: 'Sass'
-    },
-    { 
-        id: 7,
-        icon: <DiMongodb />,
-        text: 'MongoDB'
     },
     { 
         id: 8,
@@ -141,5 +129,10 @@ export const toolIcons = [
         id: 18,
         icon: <SiTailwindcss/>,
         text: 'Tailwindcss'
+    },
+    {
+        id: 19,
+        icon: <SiTypescript />,
+        text: 'TypeScript'
     }
 ]

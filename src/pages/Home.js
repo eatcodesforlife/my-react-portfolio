@@ -1,7 +1,7 @@
 import React from 'react'
 import Hero from './Hero'
 import About from './About'
-import Connect from './Connect'
+import Connect from './Contact'
 import Projects from './Projects'
 
 

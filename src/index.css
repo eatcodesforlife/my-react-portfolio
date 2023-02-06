@@ -389,7 +389,6 @@ span h1{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 1rem;
   margin: 0 auto;
   width: 95vw;
   height: 100%;
@@ -399,9 +398,11 @@ span h1{
   z-index: 10;
 }
 .hero-info .hero-ad h3 {
-  font-size: 10rem;
+  font-size: 4.2rem;
   font-weight: 900;
-  line-height: 5rem;
+  line-height: 2.2rem;
+
+  
 }
 .hero-info .hero-call-to-action {
   position: relative;
@@ -838,6 +839,12 @@ textarea {
   .nav-button {
     font-size: 1.75rem;
   }
+
+  .hero-info .hero-ad h3 {
+    font-size: 5rem;
+    line-height: 2.5rem;
+  }
+
 }
 
 @media screen and (min-width: 576px) {
@@ -847,12 +854,16 @@ textarea {
   .about-tools ul {
     grid-template-columns: repeat(3, 1fr);
   }
+  .hero-info .hero-ad h3 {
+    font-size: 6.5rem;
+    line-height: 3.5rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .hero-info h3 {
     font-size: 4rem;
-    margin-left: 5rem;
+    margin-left: 2rem;
   }
   .projects-center {
     grid-template-columns: repeat(auto-fill, minmax(338.8px, 1fr));
@@ -860,9 +871,14 @@ textarea {
   .about-tools ul {
     grid-template-columns: repeat(3, 1fr);
   }
+  .hero-info .hero-ad h3 {
+    font-size: 8rem;
+    line-height: 4rem;
+  }
 }
 
 @media screen and (min-width: 800px) {
+
   .about-tools ul {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -891,4 +907,11 @@ textarea {
   .projects-featured img {
     height: 15rem;
   }
+
+
+  .hero-info .hero-ad h3 {
+    font-size: 10rem;
+    line-height: 5rem;
+  }
 }
+

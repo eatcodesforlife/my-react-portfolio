@@ -1,3 +1,6 @@
+import React from 'react';
+
+
 // import arrowImg from '../imgs/arrow.svg'
 
 const Hero = () => {
@@ -12,11 +15,13 @@ const Hero = () => {
             <article className="hero-info">
               <div className='hero-ad'>
                 <div className='hero-ad-glass hero-glass-nuemorphism'></div>
-                <h3>Let's</h3>
-                <h3><span>build</span></h3>
-                <h3>awesome<span> things</span></h3>
-                <h3>on the</h3>
-                <h3><span>web</span>.</h3>
+                <div>
+                  <h3>Let's</h3>
+                  <h3><span>build</span></h3>
+                  <h3>awesome<span> things</span></h3>
+                  <h3>on the</h3>
+                  <h3><span>web</span>.</h3>
+                </div>
               </div>
               {/* <span className='hero-call-to-action'> 
                 <div className='hero-call-to-acion-glass hero-glass-nuemorphism'></div>
