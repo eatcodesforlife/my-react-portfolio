@@ -346,8 +346,11 @@ span h1{
   color: var(--clr-primary-6);
 }
 
+.watermark-container {
+  position: relative;
+}
 .watermark {
-  position: absolute;
+  position: fixed;
   top: 10%;
   right: 0;
   width: auto;
