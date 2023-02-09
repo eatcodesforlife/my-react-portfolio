@@ -8,9 +8,11 @@ const Hero = () => {
         <section className='hero'>
           <div className="hero-overlay">            
           </div>
-          <span className='watermark'>
-            <h1>software developer</h1>
-          </span>
+          <div className="watermark-container">
+            <span className='watermark'>
+              <h1>software developer</h1>
+            </span>
+          </div>
           <div className="hero-center">
             <article className="hero-info">
               <div className='hero-ad'>

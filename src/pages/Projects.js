@@ -1,38 +1,29 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { BiLinkExternal } from 'react-icons/bi'
 import { Link } from 'react-router-dom'
 import Loading from '../components/Loading'
 import miniProjectThumbNail from '../imgs/react-mini-projects.jpg'
+import { useFetch } from '../customHooks/useFetch'
 
 const url = 'https://my-portfolio-api.up.railway.app/featureProjects'
 const Projects = () => {
 
-  const [ projects, setProjects ] = useState([])
-    const [ isLoading, setIsLoading ] = useState(true)
-
-    const fetchProject = async() => {
-        const res = await fetch(url)
-        const data = await res.json()
-
-        setIsLoading(false)
-        setProjects(data)
-    }    
-
-    useEffect(() => {
-        fetchProject()
-    }, [])
+  const { data, isLoading } = useFetch(url)
+ 
   return (
     <section className="section projects" id='projects-section'>
       <h2 className="section-title">Projects</h2>
-      <span className="watermark">
-        <h1>projects</h1>
-      </span>
+      <div className="watermark-container">
+        <span className="watermark">
+          <h1>projects</h1>
+        </span>
+      </div>
       {
         isLoading ? <Loading /> 
         : (
           <div className="projects-center"> 
             {
-              projects.map(({id, title, imgURL, description, githubURL, url, techs }) =>(
+              data.map(({id, title, imgURL, description, githubURL, url, techs }) =>(
                 <div key={id} className='projects-featured'>
                   <div className='project-img' >
                     <img src={imgURL} alt={title} />

@@ -22,9 +22,11 @@ const Connect = () => {
     return (
         <section className='section contactme'>
             <h2 className='section-title'>Contact me</h2>
-            <span className='watermark'>
-                <h1>contact</h1>
-            </span>
+            <div className="watermark-container">
+                <span className='watermark'>
+                    <h1>contact</h1>
+                </span>
+            </div>
             <div className="contactme-center">
                 <SocialLinks />
                 <form 

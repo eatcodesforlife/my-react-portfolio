@@ -3,26 +3,14 @@ import Loading from './Loading'
 import { FaGithub } from 'react-icons/fa'
 import { HiDesktopComputer } from 'react-icons/hi'
 import { BiLinkExternal } from 'react-icons/bi'
+import { useFetch } from '../customHooks/useFetch'
 
 const url = 'https://my-portfolio-api.up.railway.app/projects'
 
 
 const MiniProjects = () => {
 
-    const [ projects, setProjects ] = useState([])
-    const [ isLoading, setIsLoading ] = useState(true)
-
-    const fetchProject = async() => {
-        const res = await fetch(url)
-        const data = await res.json()
-
-        setIsLoading(false)
-        setProjects(data)
-    }    
-
-    useEffect(() => {
-        fetchProject()
-    }, [])
+    const { data, isLoading } = useFetch(url)
 
     return (
         <section className="section projects">
@@ -33,7 +21,7 @@ const MiniProjects = () => {
                 ? <Loading />
                 : <div className="projects-center">
                     {
-                        projects.map(({ id, image, url, github, title, tags, bgColor}) => {
+                        data.map(({ id, image, url, github, title, tags, bgColor}) => {
                             return <article key={id} className="mini-project-tile">
                                 <div className="img-container">
                                     <img src={image} alt={title}/>
@@ -48,20 +36,20 @@ const MiniProjects = () => {
                                     }
                                     </ul>
                                     <div className="mini-project-links">
-                                        <a href={url} target='_blank' rel='noreferrer'>
+                                        <a href={url} target='_blank' rel='noopener noreferrer'>
                                             <HiDesktopComputer />
                                         </a>
-                                        <a href={github} target='_blank' rel='noreferrer'>
+                                        <a href={github} target='_blank' rel='noopener noreferrer'>
                                             <FaGithub />
                                         </a>
                                     </div>
                                 </div>
                                 <div className="mini-project-tile-overlay" style={{backgroundColor:`${bgColor}`}}>
                                     <div className='tile-overlay-links'>
-                                        <a href={url} rel='noreferrer' target='_blank'>
+                                        <a href={url} rel='noopener noreferrer' target='_blank'>
                                             <BiLinkExternal/> demo
                                         </a>
-                                        <a href={github} rel='noreferrer' target='_blank'>
+                                        <a href={github} rel='noopener noreferrer' target='_blank'>
                                             <BiLinkExternal/> github
                                         </a>
                                     </div>

@@ -8,6 +8,7 @@ import SubmissionSuccess from './pages/SubmissionSuccess'
 import Layout from './pages/Layout'
 import Hero from './pages/Hero'
 import Errorpage from './pages/Errorpage'
+import Miniprojects from './components/MiniProjects'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path='/about' element={<About />}/>
             <Route path='/contact' element={<Contact />}/>
             <Route path='/messagesent' element={<SubmissionSuccess />}/>
+            <Route path='/miniprojects' element={<Miniprojects />}/>
             <Route path='/*' element={<Errorpage />}/>
 
           </Route>
