@@ -28,7 +28,7 @@ const Connect = () => {
                 </span>
             </div>
             <div className="contactme-center">
-                <SocialLinks />
+                
                 <form 
                     id='contact-form'
                     className='form' 
@@ -44,17 +44,22 @@ const Connect = () => {
                     </div>
                     <div className="input-container">
                         <div className="form-control">
-                        <input placeholder='YOUR NAME' type="text" name='name' required/>
+                            <input placeholder='NAME' type="text" name='name' required 
+                            />
+                            <label htmlFor="name">Name</label>
                         </div>
                         <div className="form-control">
                             <input placeholder='YOUR EMAIL' type="email" name='email' required/>
+                            <label htmlFor="name">Email</label>
                         </div>                
                         <div className="form-control">
                             <textarea placeholder='YOUR MESSAGE' type="text" name='message' required/>
+                            <label htmlFor="name">Message</label>
                         </div>
                     </div>
                     <button type='submit' onClick={submitHandler}>Send</button>
                 </form>
+                <SocialLinks />
             </div>
         </section>
     )

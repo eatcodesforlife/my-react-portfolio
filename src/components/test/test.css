@@ -1,0 +1,25 @@
+.test-form-input-container {
+    position: relative;
+}
+
+.test-form-input-container input::placeholder {
+    color: transparent;
+}
+
+.test-form-input-container label {
+    position: absolute;
+    left: 0;
+    margin-top: -20px;
+    font-size: 1.2rem;
+    font-weight: 200;
+    transition: var(--transition2);
+}
+
+.test-form-input-container input:placeholder-shown + label {
+    transform: translateY(40px);
+}
+
+.test-form-input-container input:focus + label{
+    transform: translateY(0);
+    font-size: 1rem;
+}

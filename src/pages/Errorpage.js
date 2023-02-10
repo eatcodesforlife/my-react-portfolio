@@ -1,5 +1,6 @@
 import React from 'react'
 import HomeButton from '../components/HomeButton'
+import Test from '../components/test/Test'
 
 const Errorpage = () => {
     return (
