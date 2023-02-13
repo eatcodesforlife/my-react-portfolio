@@ -141,7 +141,7 @@ const TestForm = () => {
                 <form 
                     id='contact-form'
                     className='form' 
-                    name='contact' 
+                    name='contact-form-test' 
                     method="post"
                     data-netlify='true'
                     netlify-honeypot="bot-field"
