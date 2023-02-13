@@ -25,7 +25,6 @@ const Connect = () => {
     //     .catch((error) => alert(error));
     // }
     
-
     const submitHandler = (e) =>{
         e.preventDefault();
         if(!isFormValid){
@@ -36,10 +35,11 @@ const Connect = () => {
             )
         }
         if(isFormValid){
+
             fetch("/", {
                 method: "POST",
                 headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                body: new URLSearchParams(inputData).toString(),
+                body: encode({ "form-name": "contact", inputData }),
                 })
                 .then(() =>  navigate('/messagesent'))
                 .catch((error) => alert(error));
