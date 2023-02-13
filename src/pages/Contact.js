@@ -11,7 +11,7 @@ const encode = (data) => {
         .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
         .join("&");
   }
-  
+
 const Connect = () => {
 
     const [ state, dispatch ] = useReducer( formReducer, formInitialState)
@@ -46,7 +46,7 @@ const Connect = () => {
             fetch("/", {
                 method: "POST",
                 headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                body: encode({ "form-name": "contact", inputData }),
+                body: encode({ "form-name": "contact", ...inputData }),
                 })
                 .then(() =>  navigate('/messagesent'))
                 .catch((error) => alert(error));
