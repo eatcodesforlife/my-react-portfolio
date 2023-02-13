@@ -17,6 +17,7 @@ const Errorpage = () => {
             <h2>Page not found</h2>
             <HomeButton />
            </div>
+           <Test/>
         </section>
     )
 }

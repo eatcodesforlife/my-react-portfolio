@@ -1,18 +1,18 @@
-import React from 'react'
+import React, {  useEffect, useReducer } from 'react'
+import { useNavigate } from 'react-router-dom'
+import TestForm from './TestForm'
 import './test.css'
 const Test = () => {
   return (
-    <div>
-       
-       <form action="" className='form'>
-            <div className="form-control test-form-input-container">
-                <input placeholder='NAME' type="text" name='name' required 
-                />
-                <label htmlFor="name" className='test-label'>Name</label>
-            </div>
-        </form>
-    </div>
+    <>
+       <TestForm/>
+    </>
   )
 }
+
+
+
+
+
 
 export default Test
