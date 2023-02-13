@@ -5,6 +5,13 @@ import { useNavigate } from "react-router-dom";
 import { formInitialState, formReducer, validateForm } from '../store';
 
 
+
+const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+  }
+  
 const Connect = () => {
 
     const [ state, dispatch ] = useReducer( formReducer, formInitialState)
