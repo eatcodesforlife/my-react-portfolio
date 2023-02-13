@@ -804,6 +804,9 @@ a {
   margin-left: 0;
 }
 
+.form-error {
+  color: var(--clr-primary-5);
+}
 
 .input-container {
   padding-bottom: 5rem;

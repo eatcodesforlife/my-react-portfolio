@@ -1,6 +1,5 @@
 import React from 'react'
 import HomeButton from '../components/HomeButton'
-import Test from '../components/test/Test'
 
 const Errorpage = () => {
     return (
@@ -17,7 +16,6 @@ const Errorpage = () => {
             <h2>Page not found</h2>
             <HomeButton />
            </div>
-           <Test/>
         </section>
     )
 }

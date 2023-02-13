@@ -1,53 +1,10 @@
 import React,{ useEffect, useReducer} from 'react'
 import { useNavigate } from 'react-router-dom'
-
-const formInitialState = {
-  inputData: {
-    contactName:'', 
-    email:'', 
-    message:''
-  },
-  formErrors: {
-    contactName:'', 
-    email:'', 
-    message:''
-  },
-  isFormValid: false,
-  isShowModal: false
-}
+import { formReducer, formInitialState, validateForm } from '../../store'
 
 
-const formReducer = (state, action) => {
-  const {type, payload} = action
-  
-  switch(type){
-    case 'SET_INPUT_DATA':
-      return {
-        ...state,
-        inputData: {...state.inputData,
-        [payload.name]: payload.value}
-      }
 
-    case 'SET_FORM_ERRORS':
-      return {
-        ...state, 
-        formErrors: payload.errors,
-        isFormValid: Object.values(payload.errors).every(error => error === "")
-      }
-    case 'VALID_FORM_DATA':
-        return {
-            ...state,
-            isFormValid: !state.isFormValid
-        }
-    case 'SHOW_MODAL':
-        return{
-            ...state,
-            isShowModal: true
-        }
-    default: return state
-  }
-  
-}
+
 
 
 
@@ -63,10 +20,12 @@ const TestForm = () => {
     const submitHandler = (e) =>{
         e.preventDefault();
         console.log(isFormValid, inputData, formErrors)
-        if(!isFormValid && Object.values(inputData).every(error => error === "")){
-            dispatch({
-                type: 'SHOW_MODAL'
-            })
+        if(!isFormValid){
+            dispatch(
+                {
+                    type: 'SHOW_MODAL'
+                }
+            )
         }
         if(isFormValid){
             fetch("/", {
@@ -91,24 +50,8 @@ const TestForm = () => {
     }
 
     
-    const validateForm =()=> {
-        const newErrors = {}
-        if(inputData.contactName === '') {
-            newErrors.contactName = 'Name is invalid! Please use alpha numeric characters only.' 
-        }
-        if(!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g.test(inputData.email)){
-            newErrors.email = 'Email is invalid!'
-        }
-        if(inputData.message === ''){
-            newErrors.message = 'Message is empty!'
-        }
-
-        return newErrors
-    }
-
-
     useEffect(() => {
-       const newErrors = validateForm()
+       const newErrors = validateForm(inputData)
         if(Object.values(newErrors).every(error => error === "")){
             dispatch(
                 {
@@ -157,7 +100,7 @@ const TestForm = () => {
                               onChange={handleChange}
                             />
                             <label htmlFor="name">Name</label>
-                            {isShowModal && <p>{formErrors.contactName}</p> }
+                            {isShowModal && <p className='form-error'>{formErrors.contactName}</p> }
                         </div>
                         <div className="form-control">
                             <input 
@@ -167,7 +110,7 @@ const TestForm = () => {
                             />
                             <label htmlFor="name">Email</label>
 
-                            {isShowModal && <p>{formErrors.email}</p> }
+                            {isShowModal &&<p className='form-error'>{  formErrors.email}</p> }
                         </div>                
                         <div className="form-control">
                             <textarea placeholder='YOUR MESSAGE' type="text" name='message' value={inputData.message}
@@ -175,7 +118,7 @@ const TestForm = () => {
                             />
                             <label htmlFor="name">Message</label>
 
-                            {isShowModal && <p>{formErrors.message}</p> }
+                            {isShowModal &&  <p className='form-error'>{formErrors.message}</p> }
                         </div>
                     </div>
                     <button type='submit' 
