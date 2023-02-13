@@ -13,9 +13,17 @@ const About = () => {
             <div className="about-center">
                 <article className='about-info'>
                     <div className="about-text">
-                        <p>Hi there! My name is Cris. I build responsive web apps from scratch using bleeding edge technologies like React and Nextjs.</p>
+                        <p>Hi there! My name is Cris. I'm a front-end developer with a passion for creating visually appealing and user-friendly web experiences. Although I'm still in the early stages of my career, I have a strong foundation in the latest technologies, including React, TypeScript, Next.js, SASS, and Tailwind.</p>
 
-                        <p>Other than the vast opportunities and possibilities that Software Development has to offer, birthing ideas to life through code, seeing it improve the lives and productivity of the users, and just learning new things are what excites me the most about being a developer.</p>
+                        <p>
+                        I love the challenge of finding creative solutions to bring my ideas to life. I'm constantly learning and expanding my skill set to stay up-to-date with the latest trends in front-end development.
+                        </p>
+                        <p>
+                        I believe that the front-end is the face of a website or application, and it's important to make a lasting impression on users. Whether I'm working on a simple landing page or a complex e-commerce platform, I strive to deliver the best possible experience to users.
+                        </p>
+                        <p>
+                        I'm eager to dive into new projects and work with a team of developers to bring great ideas to life. If you're looking for a driven and enthusiastic front-end developer, I'd love to hear from you!
+                        </p>
                     </div>
                     <div className="about-tools">
                         <h3>Skills and Tools</h3>
